@@ -5,7 +5,7 @@
 [![Total Downloads](https://poser.pugx.org/spinen/laravel-quickbooks-client/downloads)](https://packagist.org/packages/spinen/laravel-quickbooks-client)
 [![License](https://poser.pugx.org/spinen/laravel-quickbooks-client/license)](https://packagist.org/packages/spinen/laravel-quickbooks-client)
 
-PHP client wrapping the [QuickBooks PHP SDK](https://github.com/intuit/QuickBooks-V3-PHP-SDK).
+PHP client wrapping the [QuickBooks PHP SDK](https://github.com/intuit/QuickBooks-V3-PHP-SDK) (v^6.2).
 
 We solely use [Laravel](https://www.laravel.com) for our applications, so this package is written with Laravel in mind. If there is a request from the community to split this package into 2 parts to allow it to be used outside of Laravel, then we will consider doing that work.
 
@@ -17,6 +17,8 @@ We solely use [Laravel](https://www.laravel.com) for our applications, so this p
 | Master | [![Build Status](https://github.com/spinen/laravel-quickbooks-client/workflows/CI/badge.svg?branch=master)](https://github.com/spinen/laravel-quickbooks-client/workflows/CI/badge.svg?branch=master) | [![Code Coverage](https://scrutinizer-ci.com/g/spinen/laravel-quickbooks-client/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/spinen/laravel-quickbooks-client/?branch=master) | [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/spinen/laravel-quickbooks-client/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/spinen/laravel-quickbooks-client/?branch=master) |
 
 ## Installation
+
+This package requires **Laravel 12** and **PHP 8.4** or higher.
 
 1. Install QuickBooks PHP Client:
 
@@ -85,7 +87,7 @@ Here is an example of getting the company information from QuickBooks:
 
 ```php
 php artisan tinker
-Psy Shell v0.8.17 (PHP 7.1.14 — cli) by Justin Hileman
+Psy Shell v0.11.21 (PHP 8.4.x — cli) by Justin Hileman
 >>> Auth::logInUsingId(1)
 => App\Models\User {#1668
      id: 1,

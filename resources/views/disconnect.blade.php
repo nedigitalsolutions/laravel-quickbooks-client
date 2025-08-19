@@ -23,8 +23,8 @@
           method="POST"
           style="display: none;"
     >
-        {{ method_field('DELETE') }}
-        {{ csrf_field() }}
+        @method('DELETE')
+        @csrf
     </form>
 </div>
 </body>
